@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelompok 4 - SIHATI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">SIHATI</div>
+    <ul class="nav-links">
+      <li><a href="#tim">Tim</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero hero--center">
+    <div class="hero-text hero-text--center">
+      <span class="hero-tag">Tugas Akhir Pemrograman Web 2026</span>
+      <h1 class="hero-title">
+        Introduction Tim<br>
+        <em>SIHATI</em>
+      </h1>
+      <p class="hero-desc hero-desc--center">
+        SIHATI (Sistem Informasi Kesehatan Mental Terintegrasi) adalah platform berbasis web yang dirancang untuk membantu masyarakat, khususnya mahasiswa, dalam mengelola kesehatan mental secara mandiri dan mudah. Sistem ini menyediakan informasi seputar kesehatan mental, sesi terapi mandiri berbasis Cognitive Behavioral Therapy (CBT), ruang jurnal melalui fitur e-Diary, serta akses cepat ke kontak darurat layanan kesehatan mental.
+      </p>
+      <div class="hero-badges hero-badges--center">
+        <span class="badge">Kelompok 4</span>
+        <span class="badge">Ilmu Komputer</span>
+        <span class="badge">FMIPA Unila</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="tim">
+    <div class="team-header">
+      <div>
+        <div class="section-label">Anggota Kelompok</div>
+        <h2 class="section-title">Tim Pengembang</h2>
+      </div>
+      <div class="team-prodi">
+        <strong class="prodi-strong">Jurusan Ilmu Komputer</strong>
+        Fakultas Matematika dan Ilmu Pengetahuan Alam<br>
+        Universitas Lampung, 2026
+      </div>
+    </div>
+
+    <div class="team-grid">
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="foto/Reggy.jpeg" alt="Reggy Desvita Kamal">
+        </div>
+        <div class="member-info">
+          <div class="member-nim">2417051016</div>
+          <div class="member-name">Reggy Desvita Kamal</div>
+          <div class="member-role">Haii, aku mahasiswa Ilmu Komputer yang aktif di organisasi kampus dan tertarik di dunia teknologi. Aku juga peduli dengan isu kesehatan mental yang sering jadi inspirasi proyekku. Di waktu luang, aku suka makan dan bermain sosmed untuk recharge sebelum kembali produktif.</div>
+          <span class="member-tag">Kelompok 4</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="foto/Satriyo.jpeg" alt="Satriyo Wicaksono">
+        </div>
+        <div class="member-info">
+          <div class="member-nim">2417051041</div>
+          <div class="member-name">Satriyo Wicaksono</div>
+          <div class="member-role">Hai, aku mahasiswa Ilmu Komputer yang berasal dari Kota Bekasi dengan latar belakang Teknik Komputer dan Jaringan. Sebagai mahasiswa, kesehatan mental adalah prioritas utamaku saat ini. Di waktu luang, aku terbiasa melakukan quality time dengan tujuan self-reward untuk mengapresiasi diri sendiri demi kesehatan mentalku..</div>
+          <span class="member-tag">Kelompok 4</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="foto/Veri.jpeg" alt="Rahmad Veri Apriansah">
+        </div>
+        <div class="member-info">
+          <div class="member-nim">2417051036</div>
+          <div class="member-name">Rahmad Veri Apriansah</div>
+          <div class="member-role">Hai, saya mahasiswa Ilmu Komputer Universitas Lampung yang aktif dan berbahagia. Hobi saya mendengar musik dan main game.</div>
+          <span class="member-tag">Kelompok 4</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="foto/Arif.jpeg" alt="Muhammad Arif">
+        </div>
+        <div class="member-info">
+          <div class="member-nim">2417051045</div>
+          <div class="member-name">Muhammad Arif</div>
+          <div class="member-role">Hai, aku mahasiswa Ilmu komputer Universitas Lampung yang berasal dari Lampung Tengah. Hobi menonton anime dan mendengarkan musik. Sedang mencoba mengubah diri menjadi lebih baik</div>
+          <span class="member-tag">Kelompok 4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sw-modal-overlay" id="swModal" role="dialog" aria-modal="true" aria-label="Profil Anggota">
+    <div class="sw-modal">
+      <div class="sw-modal-avatar" id="modalAvatar">
+        <span class="sw-modal-initials" id="modalInitials"></span>
+        <button class="sw-modal-close" id="swModalClose" aria-label="Tutup">
+          <svg viewBox="0 0 14 14"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+        </button>
+      </div>
+      <div class="sw-modal-body">
+        <div class="sw-modal-nim" id="modalNim"></div>
+        <div class="sw-modal-name" id="modalName"></div>
+        <span class="sw-modal-role-badge" id="modalRoleBadge"></span>
+        <div class="sw-modal-divider"></div>
+        <p class="sw-modal-desc" id="modalDesc"></p>
+        <div class="sw-modal-meta">
+          <div class="sw-meta-item">
+            <div class="sw-meta-label">NIM</div>
+            <div class="sw-meta-value" id="modalMetaNim"></div>
+          </div>
+          <div class="sw-meta-item">
+            <div class="sw-meta-label">Kelompok</div>
+            <div class="sw-meta-value">Kelompok 4</div>
+          </div>
+          <div class="sw-meta-item">
+            <div class="sw-meta-label">Program Studi</div>
+            <div class="sw-meta-value">Ilmu Komputer</div>
+          </div>
+          <div class="sw-meta-item">
+            <div class="sw-meta-label">Fakultas</div>
+            <div class="sw-meta-value">FMIPA Unila</div>
+          </div>
+        </div>
+      </div>
+      <div class="sw-modal-footer">
+        <span class="sw-modal-tag">Kelompok 4 · SIHATI 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const members = [
+      {
+        initials: 'RD',
+        photo: 'foto/Reggy.jpeg',
+        nim: '2417051016',
+        name: 'Reggy Desvita Kamal',
+        role: 'Koordinator & System Developer',
+        desc: 'Bertanggung jawab dalam koordinasi dan pengembangan sistem SIHATI. Memastikan seluruh alur pengembangan berjalan sesuai rencana dan standar kualitas yang ditetapkan.'
+      },
+      {
+        initials: 'SW',
+        photo: 'foto/Satriyo.jpeg',
+        nim: '2417051041',
+        name: 'Satriyo Wicaksono',
+        role: 'Frontend & Feature Developer',
+        desc: 'Berkontribusi dalam perancangan dan implementasi fitur sistem SIHATI. Bertanggung jawab atas pengembangan antarmuka pengguna yang responsif serta integrasi komponen-komponen utama aplikasi.'
+      },
+      {
+        initials: 'RV',
+        photo: 'foto/Veri.jpeg',
+        nim: '2417051036',
+        name: 'Rahmad Veri Apriansah',
+        role: 'Back-End Developer',
+        desc: 'Fokus pada pengembangan back-end dan logika bisnis aplikasi SIHATI. Merancang arsitektur server, API, dan pengelolaan basis data untuk mendukung seluruh fitur sistem.'
+      },
+      {
+        initials: 'MA',
+        photo: 'foto/Arif.jpeg',
+        nim: '2417051045',
+        name: 'Muhammad Arif',
+        role: 'UI/UX Designer',
+        desc: 'Berperan dalam desain antarmuka dan pengalaman pengguna SIHATI. Bertanggung jawab menciptakan tampilan yang intuitif, aksesibel, dan sesuai kebutuhan pengguna.'
+      }
+    ];
+
+    const avatarGradients = [
+      'linear-gradient(135deg, #7a9e87, #a8c5b0)',
+      'linear-gradient(135deg, #c4956a, #dbb896)',
+      'linear-gradient(135deg, #6e8fa0, #9bb8c8)',
+      'linear-gradient(135deg, #9a7ec8, #bba8e0)'
+    ];
+
+    const swModal   = document.getElementById('swModal');
+    const swClose   = document.getElementById('swModalClose');
+
+    document.querySelectorAll('.member-card').forEach((card, i) => {
+      card.addEventListener('click', () => {
+        const m          = members[i];
+        const avatarEl   = document.getElementById('modalAvatar');
+        const initialsEl = document.getElementById('modalInitials');
+
+        document.getElementById('modalNim').textContent       = m.nim;
+        document.getElementById('modalName').textContent      = m.name;
+        document.getElementById('modalRoleBadge').textContent = m.role;
+        document.getElementById('modalDesc').textContent      = m.desc;
+        document.getElementById('modalMetaNim').textContent   = m.nim;
+
+        const oldImg = avatarEl.querySelector('img');
+        if (oldImg) oldImg.remove();
+
+        if (m.photo) {
+          avatarEl.style.background = avatarGradients[i];
+          initialsEl.style.display  = 'none';
+          const img = document.createElement('img');
+          img.src = m.photo;
+          img.alt = m.name;
+          img.className = 'modal-photo';
+          avatarEl.appendChild(img);
+        } else {
+          avatarEl.style.background = avatarGradients[i];
+          initialsEl.style.display  = '';
+          initialsEl.textContent    = m.initials;
+        }
+
+        swModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeModal() {
+      swModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    swClose.addEventListener('click', closeModal);
+    swModal.addEventListener('click', (e) => { if (e.target === swModal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  </script>
+
+  
+  <footer>
+    <div>
+      <div class="footer-title">SIHATI</div>
+      <div class="footer-sub">Sistem Informasi Kesehatan Mental Terintegrasi -- Kelompok 4</div>
+    </div>
+    <div class="footer-right">
+      <strong>Universitas Lampung</strong>
+      Jurusan Ilmu Komputer, FMIPA<br>
+      Pemrograman Web &middot; 2026
+    </div>
+  </footer>
+
+</body>
+</html>
